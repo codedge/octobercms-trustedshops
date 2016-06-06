@@ -1,0 +1,20 @@
+{% if tsRating.isEnabled and tsRating.tsId %}
+<!-- Trusted Shops TrustedRating Start -->
+<script type="text/javascript" src="//widgets.trustedshops.com/reviews/tsSticker/tsProductStickerSummary.js"></script>
+<script>
+    var summaryBadge = new productStickerSummary();
+    summaryBadge.showSummary(
+        {
+            'tsId': '{{ tsRating.tsId }}',
+            'sku': ['{{ tsRating.sku }}'],
+            'element': '{{ tsRating.elementContainer }}',
+            'starColor' : '{{ tsRating.starColor }}',
+            'starSize' : '{{ tsRating.starSize }}px',
+            'fontSize' : '{{ tsRating.fontSize }}px',
+            'showRating' : true,
+            'scrollToReviews' : {{ tsRating.scrollToReviews | bool }}
+        }
+    );
+</script>
+<!-- Trusted Shops TrustedRating End -->
+{% endif %}

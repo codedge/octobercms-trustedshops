@@ -1,0 +1,29 @@
+123
+{% if tsBadge.isEnabled and tsBadge.tsId %}
+<!-- Trusted Shops Trustbadge Start -->
+<script type="text/javascript">
+    (function () {
+        var _tsid = '{{ tsBadge.tsId }}';
+        _tsConfig = {
+            'yOffset': '',
+            'variant': '{{ tsBadge.variant }}',
+            'customElementId': 'custom-ts-container',
+            'trustcardDirection': '{{ tsBadge.trustcardDirection }}',
+            'customBadgeWidth': '{{ tsBadge.width }}',
+            'customBadgeHeight': '{{ tsBadge.height }}',
+            'disableResponsive': 'false',
+            'disableTrustbadge': 'false',
+            'trustCardTrigger': '{{ tsBadge.trustcardTrigger }}',
+            'customCheckoutElementId': '{{ tsBadge.customCheckoutElementId }}'
+        };
+        var _ts = document.createElement('script');
+        _ts.type = 'text/javascript';
+        _ts.charset = 'utf-8';
+        _ts.async = true;
+        _ts.src = '//widgets.trustedshops.com/js/' + _tsid + '.js';
+        var __ts = document.getElementsByTagName('script')[0];
+        __ts.parentNode.insertBefore(_ts, __ts);
+    })();
+</script>
+<!-- Trusted Shops Trustbadge End -->
+{% endif %}

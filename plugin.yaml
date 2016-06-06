@@ -1,0 +1,10 @@
+plugin:
+    name: 'codedge.trustedshops::lang.plugin.name'
+    description: 'codedge.trustedshops::lang.plugin.description'
+    author: 'Holger Lösken'
+    icon: oc-icon-adjust
+    homepage: ''
+permissions:
+    trustedshops.configure_ts:
+        tab: 'codedge.trustedshops::lang.plugin.name'
+        label: 'codedge.trustedshops::lang.trustedshops.configure_ts'

@@ -1,0 +1,27 @@
+{% if tsReview.isEnabled and tsReview.tsId %}
+<!-- Trusted Shops TrustedReviews Start -->
+<script type="text/javascript">
+    _tsProductReviewsConfig = {
+        tsid: '{{ tsReview.tdId }}',
+        sku: ['{{ tsReview.sku }}'],
+        variant: '{{ tsReview.variant }}',
+        borderColor: '{{ tsReview.borderColor }}',
+        locale: '{{ tsReview.locale }}',
+        starColor: '{{ tsReview.starColor }}',
+        starSize: '{{ tsReview.starSize }}px',
+        ratingSummary: {{ tsReview.ratingSummary | bool }},
+        maxHeight: '{{ tsReview.maxHeight }}px',
+        'element': '{{ tsReview.elementContainer }}',
+        introtext: '{{ tsReview.introText }}'
+    };
+    var scripts = document.getElementsByTagName('SCRIPT'), me = scripts[scripts.length - 1];
+    var _ts = document.createElement('SCRIPT');
+    _ts.type = 'text/javascript';
+    _ts.async = true;
+    _ts.charset = 'utf-8';
+    _ts.src = '//widgets.trustedshops.com/reviews/tsSticker/tsProductSticker.js';
+    me.parentNode.insertBefore(_ts, me);
+    _tsProductReviewsConfig.script = _ts;
+</script>
+<!-- Trusted Shops TrustedReviews End -->
+{% endif %}

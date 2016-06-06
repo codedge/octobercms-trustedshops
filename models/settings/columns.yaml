@@ -1,0 +1,13 @@
+columns:
+    ts_id:
+        label: 'codedge.trustedshops::lang.trustedshops.id'
+        type: text
+    enable_badge:
+        label: 'codedge.trustedshops::lang.trustedshops.enable_badge'
+        type: switch
+    enable_reviews:
+        label: 'codedge.trustedshops::lang.trustedshops.enable_reviews'
+        type: switch
+    enable_rating:
+        label: 'codedge.trustedshops::lang.trustedshops.enable_rating'
+        type: switch

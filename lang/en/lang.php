@@ -1,0 +1,27 @@
+<?php return [
+    'plugin' => [
+        'name' => 'Trusted Shops',
+        'description' => 'Add the Trusted Shops Badge and Reviews to your site.',
+    ],
+    'trustedshops' => [
+        'border_color' => 'Border color',
+        'configure_ts' => 'Configure Trusted Shops',
+        'id' => 'Trusted Shops ID',
+        'intro_text' => 'Intro text',
+        'enable_badge' => 'Enable Badge',
+        'enable_reviews' => 'Enable Reviews',
+        'enable_rating' => 'Enable Rating',
+        'general' => 'General',
+        'locale' => 'Locale',
+        'max_height' => 'Max. container height',
+        'product_review_sticker' => 'Product review sticker',
+        'product_rating_stars' => 'Product review stars',
+        'reviews_summary' => 'Show reviews summary',
+        'star_color' => 'Star color',
+        'star_size' => 'Star size',
+        'font_size' => 'Font size',
+        'ratings_star_container' => 'Product reviews stars container',
+        'ratings_container' => 'Product review sticker container',
+        'scroll_to_reviews' => 'Scroll to reviews',
+    ],
+];

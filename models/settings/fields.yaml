@@ -1,0 +1,187 @@
+tabs:
+    fields:
+        ts_id:
+            label: 'codedge.trustedshops::lang.trustedshops.id'
+            span: left
+            tab: 'codedge.trustedshops::lang.trustedshops.general'
+            type: text
+        enable_badge:
+            label: 'codedge.trustedshops::lang.trustedshops.enable_badge'
+            span: full
+            tab: 'TrustBadge'
+            type: checkbox
+        'badge_variant':
+            label: 'Variant'
+            span: left
+            tab: 'TrustBadge'
+            required: 1
+            type: dropdown
+            options:
+                text: text
+                default: default
+                small: small
+                reviews: reviews
+                custom: custom
+                custom_reviews: custom_reviews
+        'badge_trustcard_direction':
+            label: 'Trustcard direction'
+            span: left
+            tab: 'TrustBadge'
+            required: 1
+            type: dropdown
+            options:
+                topRight: topRight
+                topLeft: topLeft
+                bottomRight: bottomRight
+                bottomLeft: bottomLeft
+        'badge_trustcard_trigger':
+            label: 'Trustcard trigger'
+            span: right
+            tab: 'TrustBadge'
+            required: 1
+            type: dropdown
+            options:
+                mouseenter: mouseenter
+                click: click
+        'badge_width':
+            label: 'Badge width'
+            comment: Enter a custom badge width, between 40-90.
+            span: left
+            tab: 'TrustBadge'
+            required: 0
+            type: number
+        'badge_height':
+            label: 'Badge height'
+            comment: Enter a custom badge height, between 40-90.
+            span: right
+            tab: 'TrustBadge'
+            required: 0
+            type: number
+        'badge_custom_checkout_element_id':
+            label: 'Checkout element id'
+            span: left
+            tab: 'TrustBadge'
+            required: 0
+            type: text
+
+
+        enable_reviews:
+            label: 'codedge.trustedshops::lang.trustedshops.enable_reviews'
+            span: left
+            tab: 'codedge.trustedshops::lang.trustedshops.product_review_sticker'
+            type: checkbox
+
+        reviews_border_color:
+            label: 'codedge.trustedshops::lang.trustedshops.border_color'
+            span: left
+            tab: codedge.trustedshops::lang.trustedshops.product_review_sticker
+            required: 0
+            type: text
+            default: '#F2F2F2'
+
+        reviews_star_color:
+            label: codedge.trustedshops::lang.trustedshops.star_color
+            comment: 'The color of the stars, enter a hexadecimal value, i. e. #FFDC0F'
+            span: right
+            tab: codedge.trustedshops::lang.trustedshops.product_review_sticker
+            required: 1
+            type: text
+            default: '#FFDC0F'
+
+        reviews_star_size:
+            label: codedge.trustedshops::lang.trustedshops.star_size
+            comment: The size of the review stars in pixel (px)
+            span: left
+            tab: codedge.trustedshops::lang.trustedshops.product_review_sticker
+            required: 1
+            type: number
+            default: 15
+
+        reviews_max_height:
+            label: codedge.trustedshops::lang.trustedshops.max_height
+            comment: The maximum height of the container the reviews are displayed in pixel (px)
+            span: left
+            tab: codedge.trustedshops::lang.trustedshops.product_review_sticker
+            required: 1
+            type: number
+            default: 1200
+
+        reviews_summary:
+            label: codedge.trustedshops::lang.trustedshops.reviews_summary
+            span: left
+            tab: codedge.trustedshops::lang.trustedshops.product_review_sticker
+            type: checkbox
+
+        reviews_locale:
+            label: 'codedge.trustedshops::lang.trustedshops.locale'
+            comment: The language, the reviews are displayed in. Valid values are i. e. en_GB or de_DE.
+            span: left
+            tab: 'codedge.trustedshops::lang.trustedshops.product_review_sticker'
+            required: 1
+            type: text
+            default: en_GB
+
+        reviews_element_container:
+            label: codedge.trustedshops::lang.trustedshops.ratings_container
+            comment: The container ID the reviews are displayed in
+            span: right
+            tab: codedge.trustedshops::lang.trustedshops.product_review_sticker
+            type: text
+            default: '#ts_product_sticker'
+
+        reviews_intro_text:
+            label: codedge.trustedshops::lang.trustedshops.intro_text
+            span: full
+            tab: codedge.trustedshops::lang.trustedshops.product_review_sticker
+            required: 0
+            type: textarea
+            size: small
+
+        enable_rating:
+            label: codedge.trustedshops::lang.trustedshops.enable_rating
+            span: left
+            tab: codedge.trustedshops::lang.trustedshops.product_rating_stars
+            type: checkbox
+            default: false
+
+        rating_star_size:
+            label: codedge.trustedshops::lang.trustedshops.star_size
+            comment: The size of the rating stars in pixel (px)
+            span: left
+            tab: codedge.trustedshops::lang.trustedshops.product_rating_stars
+            required: 1
+            type: number
+            default: 14
+
+        rating_star_color:
+            label: codedge.trustedshops::lang.trustedshops.star_color
+            comment: 'The color of the stars, enter a hexadecimal value, i. e. #FFDC0F'
+            span: right
+            tab: codedge.trustedshops::lang.trustedshops.product_rating_stars
+            required: 1
+            type: text
+            default: '#FFDC0F'
+
+        rating_font_size:
+            label: codedge.trustedshops::lang.trustedshops.font_size
+            comment: The font size in pixel (px)
+            span: left
+            tab: codedge.trustedshops::lang.trustedshops.product_rating_stars
+            required: 1
+            type: number
+            default: 12
+
+        rating_element_container:
+            label: codedge.trustedshops::lang.trustedshops.ratings_star_container
+            comment: The container ID the review stars are displayed in
+            span: left
+            tab: codedge.trustedshops::lang.trustedshops.product_rating_stars
+            type: text
+            default: '#ts_product_widget'
+
+        rating_scroll_to_reviews:
+            label: codedge.trustedshops::lang.trustedshops.scroll_to_reviews
+            span: left
+            tab: codedge.trustedshops::lang.trustedshops.product_rating_stars
+            type: checkbox
+            default: false

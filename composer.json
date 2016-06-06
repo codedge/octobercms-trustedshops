@@ -1,0 +1,27 @@
+{
+    "name": "codedge/octobercms-trustedshops",
+    "type": "october-plugin",
+    "description": "Integrate Trusted Shops into your October CMS",
+    "keywords": ["october", "octobercms", "cms", "trusted shops", "trustedshops", "plugin"],
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Holger Lösken",
+        "email": "holger.loesken@codedge.de",
+      }
+    ],
+    "require": {
+      "php": ">=5.4",
+      "composer/installers": "~1.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "Codedge\\TrustedShops\\": ""
+      }
+    },
+    "extra": {
+      "branch-alias": {
+        "dev-master": "1.0-dev"
+      }
+    }
+}
