@@ -13,11 +13,17 @@ class Settings extends Model
      * Validation rules
      */
     public $rules = [
-        'ts_id'                 => 'required',
-
-        'rating_font_size'      => 'required|numeric',
-        'rating_star_color'     => 'required',
-        'rating_star_size'      => 'required|numeric',
+        'ts_id'                     => 'required',
+        'reviews_border_color'      => 'required',
+        'reviews_star_color'        => 'required',
+        'reviews_star_size'         => 'required|numeric',
+        'reviews_max_height'        => 'required|numeric',
+        'reviews_locale'            => 'required|alpha_dash',
+        'reviews_element_container' => 'required',
+        'rating_font_size'          => 'required|numeric',
+        'rating_star_color'         => 'required',
+        'rating_star_size'          => 'required|numeric',
+        'rating_element_container'  => 'required',
     ];
 
     /**

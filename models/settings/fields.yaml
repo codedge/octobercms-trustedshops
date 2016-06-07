@@ -75,7 +75,7 @@ tabs:
             label: 'codedge.trustedshops::lang.trustedshops.border_color'
             span: left
             tab: codedge.trustedshops::lang.trustedshops.product_review_sticker
-            required: 0
+            required: 1
             type: text
             default: '#F2F2F2'
 
@@ -175,6 +175,7 @@ tabs:
             label: codedge.trustedshops::lang.trustedshops.ratings_star_container
             comment: The container ID the review stars are displayed in
             span: left
+            required: 1
             tab: codedge.trustedshops::lang.trustedshops.product_rating_stars
             type: text
             default: '#ts_product_widget'
