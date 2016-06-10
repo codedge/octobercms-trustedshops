@@ -1,4 +1,2 @@
-1.0.2:
-    - 'Fixed missing field validation rules'
-1.0.1:
-    - 'Initialize plugin.'
+1.0.0: Initialize plugin.
+1.0.1: Fix validation rules.
