@@ -43,20 +43,25 @@ tabs:
             options:
                 mouseenter: mouseenter
                 click: click
+
         'badge_width':
             label: 'Badge width'
-            comment: Enter a custom badge width, between 40-90.
+            comment: Enter a custom badge width, between 40 and 90.
             span: left
             tab: 'TrustBadge'
             required: 0
             type: number
+            default: 40
+
         'badge_height':
             label: 'Badge height'
-            comment: Enter a custom badge height, between 40-90.
+            comment: Enter a custom badge height, between 40 and 90.
             span: right
             tab: 'TrustBadge'
             required: 0
             type: number
+            default: 40
+
         'badge_custom_checkout_element_id':
             label: 'Checkout element id'
             span: left

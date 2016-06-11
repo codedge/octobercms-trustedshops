@@ -13,6 +13,8 @@ class Settings extends Model
      * Validation rules
      */
     public $rules = [
+        'badge_width'               => 'required|between:40,90',
+        'badge_height'              => 'required|between:40,90',
         'ts_id'                     => 'required',
         'reviews_border_color'      => 'required',
         'reviews_star_color'        => 'required',
