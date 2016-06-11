@@ -18,7 +18,7 @@ class Plugin extends PluginBase
         return [
             'settings' => [
                 'label'       => 'Trusted Shops',
-                'description' => 'Configure your Trusted Shops badge, reviews and ratings.',
+                'description' => 'codedge.trustedshops::lang.plugin.configuration',
                 'category'    => 'Misc',
                 'icon'        => 'icon-cog',
                 'class'       => 'Codedge\TrustedShops\Models\Settings',
