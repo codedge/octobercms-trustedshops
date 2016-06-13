@@ -2,3 +2,4 @@
 1.0.2: Fix validation rules.
 1.0.3: Adding proper validation for badge width and height fields.
 1.0.4: Improving and adding German translations, fixing wrond validation of badge width and height
+1.0.5: Converting locale field to dropdown, add missing locales Trusted Shops can handle
