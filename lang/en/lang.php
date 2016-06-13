@@ -41,5 +41,14 @@
         'ratings_container_comment' => 'The container ID the reviews are displayed in',
         'scroll_to_reviews' => 'Scroll to reviews automatically',
         'variant' => 'Variant',
+        'locales' => [
+            'de_DE' => 'German',
+            'en_GB' => 'English (GB)',
+            'fr_FR' => 'French',
+            'it_IT' => 'Italian',
+            'es_ES' => 'Spanish',
+            'nl_NL' => 'Dutch',
+            'pl_PL' => 'Polish'
+        ]
     ],
 ];

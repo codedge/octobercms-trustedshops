@@ -42,5 +42,14 @@
         'ratings_container_comment' => 'Die div Container ID in der die Bewertungen angezeigt werden.',
         'scroll_to_reviews' => 'Automatisch zu Bewertungen scrollen',
         'variant' => 'Variante',
+        'locales' => [
+            'de_DE' => 'Deutsch',
+            'en_GB' => 'Englisch (GB)',
+            'fr_FR' => 'Französisch',
+            'it_IT' => 'Italienisch',
+            'es_ES' => 'Spanisch',
+            'nl_NL' => 'Niederländisch',
+            'pl_PL' => 'Polnisch'
+        ]
     ],
 ];

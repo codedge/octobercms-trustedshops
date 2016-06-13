@@ -126,7 +126,15 @@ tabs:
             span: left
             tab: 'codedge.trustedshops::lang.trustedshops.product_review_sticker'
             required: 1
-            type: text
+            type: dropdown
+            options:
+                nl_NL: codedge.trustedshops::lang.trustedshops.locales.nl_NL
+                de_DE: codedge.trustedshops::lang.trustedshops.locales.de_DE
+                pl_PL: codedge.trustedshops::lang.trustedshops.locales.pl_PL
+                fr_FR: codedge.trustedshops::lang.trustedshops.locales.fr_FR
+                en_GB: codedge.trustedshops::lang.trustedshops.locales.en_GB
+                it_IT: codedge.trustedshops::lang.trustedshops.locales.it_IT
+                es_ES: codedge.trustedshops::lang.trustedshops.locales.es_ES
             default: en_GB
 
         reviews_element_container:
